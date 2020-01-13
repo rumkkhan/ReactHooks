@@ -11,6 +11,10 @@ import Footer from './components/footer';
 import Login from './components/LoginComponent/Login'
 import Registration from './components/LoginComponent/Registration'
 import GetAPI from './components/API/GetApi';
+import MainPage from './components/Curd_Hook/MainPage'
+
+export const UserContext  = React.createContext();
+const username = "Rameez khan";
 
 var portfolioModel = [
     {img:'cake'},
@@ -29,8 +33,14 @@ var portfolioModel = [
     {title:"About Freelancer", content:"Freelance is a free to use,<br/> MIT licensed Bootstrap theme created byStart Bootstrap."}
 ]
 //<App/>
-//<Login/><Registration/>
-ReactDOM.render(<GetAPI/>, document.getElementById('page-top'));
+//<Login/><Registration/><GetAPI/>
+ReactDOM.render(
+ <UserContext.Provider value={username}>
+  {/* // <MainPage  /> */}
+  <GetAPI/>
+ </UserContext.Provider>
+
+, document.getElementById('page-top'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
