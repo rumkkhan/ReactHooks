@@ -7,8 +7,8 @@ import AWS from  'aws-sdk'
 // const config = {
 //     bucketName: 'saralclouldexcelupload',
 //     region: 'ap-south-1',
-//     accessKeyId: 'AKIAYPWLFEAY7QTJCOW3',
-//     secretAccessKey: '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',
+//     accessKeyId: '',
+//     secretAccessKey: '',
 //     metaTags: 'idsdfasdfasdfa'
 // }
 export default function GetAPI() {
@@ -34,7 +34,7 @@ export default function GetAPI() {
 // debugger
 // AWS.config.region = 'ap-south-1'; // Region
 // AWS.config.credentials = new AWS.CognitoIdentityCredentials({
-//     IdentityPoolId: 'ap-south-1:2f16e677-ee43-476e-a3c7-376b96c51260',
+//     IdentityPoolId: 'pooli I Cagnato',
 // });
 // AWS.config.credentials.get(function(err) {
 //   if (err) alert(err);
