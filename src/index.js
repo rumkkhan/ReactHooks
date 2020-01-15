@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+
 import App from './App';
 import {default as Portfolio, PortfolioItems } from './components/Portfolio'
 import * as serviceWorker from './serviceWorker';
@@ -12,8 +12,9 @@ import Login from './components/LoginComponent/Login'
 import Registration from './components/LoginComponent/Registration'
 import GetAPI from './components/API/GetApi';
 import MainPage from './components/Curd_Hook/MainPage'
-
-export const UserContext  = React.createContext();
+import FirstPage from './components/Curd_Hook/FirstPage';
+import Progressbar from './components/API/Progressbar'
+ export const UserContext  = React.createContext();
 const username = "Rameez khan";
 
 var portfolioModel = [
@@ -35,11 +36,12 @@ var portfolioModel = [
 //<App/>
 //<Login/><Registration/><GetAPI/>
 ReactDOM.render(
- <UserContext.Provider value={username}>
-  {/* // <MainPage  /> */}
-  <GetAPI/>
- </UserContext.Provider>
-
+//  <UserContext.Provider value={username}>
+//   {/* // <MainPage  /> */}
+//   {/* <GetAPI/> */}
+//   <Progressbar />
+//  </UserContext.Provider>
+<FirstPage  />
 , document.getElementById('page-top'));
 
 // If you want your app to work offline and load faster, you can change
