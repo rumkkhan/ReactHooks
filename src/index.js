@@ -13,7 +13,8 @@ import Registration from './components/LoginComponent/Registration'
 import GetAPI from './components/API/GetApi';
 import MainPage from './components/Curd_Hook/MainPage'
 import FirstPage from './components/Curd_Hook/FirstPage';
-import Progressbar from './components/API/Progressbar'
+import Progressbar from './components/API/Progressbar';
+import CurdIndex from './components/Curd_Hook/CurdIndex';
  export const UserContext  = React.createContext();
 const username = "Rameez khan";
 
@@ -41,7 +42,8 @@ ReactDOM.render(
 //   {/* <GetAPI/> */}
 //   <Progressbar />
 //  </UserContext.Provider>
-<FirstPage  />
+//<FirstPage  />
+<CurdIndex/>
 , document.getElementById('page-top'));
 
 // If you want your app to work offline and load faster, you can change
