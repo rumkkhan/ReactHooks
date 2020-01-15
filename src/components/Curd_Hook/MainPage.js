@@ -19,7 +19,7 @@ function reducer(state = initialState, action){
       default: 
        return initialState;
   }
-}
+} 
 
 export default function MainPage(){
    const [state,dispatch] = useReducer(reducer,initialState);
