@@ -13,7 +13,7 @@ const App = () => {
                <TodoList />
         </TodosContext.Provider>
     )
-}
+} 
 
 export default function() {
     return(
