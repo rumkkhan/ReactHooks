@@ -7,7 +7,7 @@ const App = () => {
             HI new
         </div>
     )
-
+ 
 } 
 
 export default App;
